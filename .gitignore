@@ -14,6 +14,10 @@
 
 # misc
 /.idea
+/.firebase
+/.git
+firebase.json
+.firebaserc
 .DS_Store
 .env
 .env.local
