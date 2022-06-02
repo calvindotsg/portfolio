@@ -11,7 +11,9 @@
 # production
 /build
 /public/CNAME
+
 # misc
+/.idea
 .DS_Store
 .env
 .env.local
