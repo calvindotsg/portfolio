@@ -22,7 +22,7 @@ const Footer = (props) => {
          <i className="fab fa-github" /> My portfolio 
         </a> 
        <br />
-       Forked from original Code <i className="fas fa-code" />  by{" "}
+       Forked from original code <i className="fas fa-code" />  by{" "}
           <a
               className="badge badge-dark"
               rel="noopener"
@@ -31,8 +31,17 @@ const Footer = (props) => {
               aria-label="My GitHub"
           >
           Hashir Shoaib
-        </a>{" "} Thanks
-       
+        </a>{" & "}
+          <a
+              className="badge badge-dark"
+              rel="noopener"
+              target=" _blank"
+              href="https://github.com/xunxdd"
+              aria-label="My GitHub"
+          >
+              Xun Ding
+          </a>
+
       </Container>
     </footer>
   );

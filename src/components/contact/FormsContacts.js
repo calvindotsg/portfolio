@@ -77,7 +77,8 @@ const useStyles = makeStyles({
         border: '1px solid lightgray',
         padding: '10px',
         margin: '20px',
-    }
+        textAlign: 'center'
+    },
 });
 
 const SERVICE_ID = "service_3fy1t3n";
@@ -139,58 +140,55 @@ const FormsContacts = ({
         >
             <div className="container-sm">
                 <div className={innerClasses}>
-                    <div className="reveal-from-bottom">
-                        <div className="row">
-                            <div className="col align-self-center">
-                                <h1 className="text-center">Contact Form via Email</h1>
-                                {/* <!-- contact form --> */}
-                                <div className={classes.demoform}>
-                                    <Form onSubmit={handleOnSubmit}>
-                                        <Form.Field
-                                            id='form-input-control-email'
-                                            control={Input}
-                                            label='Email'
-                                            name='from_email'
-                                            placeholder='Enter your email'
-                                            required
-                                            icon='mail'
-                                            iconPosition='left'
-                                        />
-                                        <Form.Field
-                                            id='form-input-control-last-name'
-                                            control={Input}
-                                            label='Name'
-                                            name='from_name'
-                                            placeholder='Enter your name'
-                                            required
-                                            icon='user circle'
-                                            iconPosition='left'
-                                        />
-                                        <Form.Field
-                                            id='form-input-control-last-name'
-                                            control={Input}
-                                            label='Subject'
-                                            name='from_subject'
-                                            placeholder='Enter your subject'
-                                            required
-                                            icon='user circle'
-                                            iconPosition='left'
-                                        />
-                                        <label for="form-textarea-control-opinion">Message</label>
-                                        <Form.Field
-                                            id='form-textarea-control-opinion'
-                                            control={TextArea}
-                                            name='message'
-                                            placeholder='Enter your message'
-                                            required
-                                        />
-                                        <Button type='submit' color='green'>Submit</Button>
-                                    </Form>
-                                </div>
-                                {/* <!-- end contact form --> */}
-                            </div>
-                        </div>
+                    <h1 className="text-center">Contact me</h1>
+                    <p className="lead text-center pb-3">
+                        Drop me a mail or just to say hi
+                    </p>
+                    {/* <!-- contact form --> */}
+                    <div className={classes.demoform}>
+                        <Form onSubmit={handleOnSubmit}>
+                            <Form.Field
+                                id='form-input-control-email'
+                                control={Input}
+                                label='Email'
+                                name='from_email'
+                                placeholder='Enter your email'
+                                required
+                                icon='mail'
+                                iconPosition='left'
+                            />
+                            <Form.Field
+                                id='form-input-control-last-name'
+                                control={Input}
+                                label='Name'
+                                name='from_name'
+                                placeholder='Enter your name'
+                                required
+                                icon='user circle'
+                                iconPosition='left'
+                            />
+                            <Form.Field
+                                id='form-input-control-last-name'
+                                control={Input}
+                                label='Subject'
+                                name='from_subject'
+                                placeholder='Enter your subject'
+                                required
+                                icon='user circle'
+                                iconPosition='left'
+                            />
+                            <label for="form-textarea-control-opinion">Message</label>
+                            <Form.Field
+                                id='form-textarea-control-opinion'
+                                control={TextArea}
+                                name='message'
+                                placeholder='Enter your message'
+                                required
+                            />
+                            <Button type='submit' color='green'>Submit</Button>
+                        </Form>
                     </div>
+                    {/* <!-- end contact form --> */}
                 </div>
             </div>
         </section>

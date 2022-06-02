@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from 'react-player';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
@@ -43,7 +43,7 @@ const MainBody = React.forwardRef(
                     width="100%"
                     height="100%"
                 />
-                    <div id="stars"></div>
+                <div id="stars"></div>
                 <div className={classes.overlay}>
                     <Box
                         height="100%"
@@ -53,38 +53,38 @@ const MainBody = React.forwardRef(
                         alignItems="center"
                         color="#fff"
                     >
-                    <Container className="text-center">
-                        <h1 ref={ref} className="display-1">
-                            {title}
-                        </h1>
-                        <Typist className="lead typist" cursor={{show: true}}>
-                            {" "}
-                            {message}
-                        </Typist>
-                        <div className="p-5">
-                            {icons.map((icon, index) => (
-                                <a
-                                    key={`social-icon-${index}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    href={icon.url}
-                                    aria-label={`My ${icon.image.split("-")[1]}`}
-                                >
-                                    <i className={`fab ${icon.image}  fa-3x socialicons`}/>
-                                </a>
-                            ))}
-                        </div>
-                        <a
-                            className="btn btn-outline-light btn-lg "
-                            href="/#aboutme"
-                            role="button"
-                            aria-label="Learn more about me"
-                        >
-                            More about me
-                        </a>
-                    </Container>
+                        <Container className="text-center">
+                            <h1 ref={ref} className="display-1">
+                                {title}
+                            </h1>
+                            <Typist className="lead typist" cursor={{show: true}}>
+                                {" "}
+                                {message}
+                            </Typist>
+                            <div className="p-5">
+                                {icons.map((icon, index) => (
+                                    <a
+                                        key={`social-icon-${index}`}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        href={icon.url}
+                                        aria-label={`My ${icon.image.split("-")[1]}`}
+                                    >
+                                        <i className={`fab ${icon.image}  fa-3x socialicons`}/>
+                                    </a>
+                                ))}
+                            </div>
+                            <a
+                                className="btn btn-outline-light btn-lg "
+                                href="/#aboutme"
+                                role="button"
+                                aria-label="Learn more about me"
+                            >
+                                More about me
+                            </a>
+                        </Container>
                     </Box>
-                    </div>
+                </div>
             </section>
         );
     }
