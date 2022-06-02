@@ -4,9 +4,9 @@
   <h1 align="center">My Portfolio ✨</h1>
 
   <p align="center">
+    <a href="https://calvin.sg">calvin.sg</a>
+    modified from
     <a href="https://xunxdd.github.io/portfolio">xunxdd.github.io</a>
-   modified from
-    <a href="https://hashirshoaeb.github.io">hashirshoaeb.github.io</a> (Thanks. Hashir)
 
   </p>
 </p>
@@ -24,18 +24,22 @@
 
 Dependencies defined in package.json:
 
-[Reactjs](https://reactjs.org/)
-| [Bootstrap](https://getbootstrap.com/)
-| [Typist](https://github.com/jstejada/react-typist)
-
+* [Reactjs](https://reactjs.org/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Typist](https://github.com/jstejada/react-typist)
+* [Emailjs](https://www.emailjs.com/)
+* [sweetalert2](https://sweetalert2.github.io/)
+* [Github Pages](https://pages.github.com/)
 
 ## Sharing 💗
 
-Project is open source. Feel free to make your own version. All you need to do is to fork this repository, edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
+Project is open source. Feel free to make your own version. All you need to do is to fork this repository,
+edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
 
 ## Prerequisites 🍪
 
-You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your PC. You should also own a GitHub account.
+You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your PC. You should also
+own a GitHub account.
 
 ## Setup And Deployment 🔧
 
@@ -50,14 +54,16 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
 4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
 
-5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
+5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13)
+   in [public/index.html](./public/index.html).
 6. Change URL in [package.json](./package.json) file:
 
    ```json
     "homepage": "https://<your-username>.github.io/home"
    ```
 
-   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
+   Or for deployment at custom domain,
+   refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
 
 7. After editing run the following bash commands:
 
@@ -73,7 +79,8 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
     npm run deploy
    ```
 
-   Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
+   Or for deployment at \<username>.github.io,
+   refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
 
 9. Congrats your site is up and running. To see it live, visit:
 
@@ -83,11 +90,11 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 
 10. To change the thumbnail image:
 
-    - Navigate to the "public" folder.  
-    - There you will see "social-image.png".  
-    - Delete it.   
-    - Take a screenshot of your version and rename it "social-image.png" and place it there.  
-    
-   Next time if you make changes, repeat from step 8.
+    - Navigate to the "public" folder.
+    - There you will see "social-image.png".
+    - Delete it.
+    - Take a screenshot of your version and rename it "social-image.png" and place it there.
+
+Next time if you make changes, repeat from step 8.
 
 

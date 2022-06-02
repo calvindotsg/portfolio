@@ -3,7 +3,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import {  about, career, education, portfolio, onlineWritings } from "../editable-stuff/config.js";
+import { mainBody, about, career, education, onlineWritings } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   const [isTop, setIsTop] = useState(true);
@@ -49,24 +49,26 @@ const Navigation = React.forwardRef((props, ref) => {
     <Navbar
       ref={navbarMenuRef}
       className={` fixed-top  ${
-        !isTop ? "navbar-dark bg-dark" : "navbar-transparent"
+        !isTop ? "navbar-white" : "navbar-transparent"
       }`}
       expand="lg"
     >
       <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
-        <img
-            src={process.env.PUBLIC_URL + '/favicon.svg'}
-            alt="profilepicture"
-            width="45"
-          />
+        {`<${mainBody.lastName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
+          <Nav.Link
+              className="nav-link lead"
+              href= "/contact"
+              rel="noreferrer noopener"
+          >
+            Contact me
+          </Nav.Link>
           {about.show && <NavLink title ="About" active={active} anchor="aboutme"/>}
           {career.show && <NavLink title ="Career" active={active} anchor="career"/> }
           {education.show && <NavLink title ="Education" active={active} anchor="education"/>}
-          {portfolio.show && <NavLink title ="Portfolio" active={active} anchor="portfolio"/>}
           {onlineWritings.show && <NavLink title ="Writings" active={active} anchor="publication"/>}
           <Nav.Link
             className="nav-link lead"
@@ -76,7 +78,6 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             Resume
           </Nav.Link>
-
         </Nav>
       </Navbar.Collapse>
     </Navbar>
