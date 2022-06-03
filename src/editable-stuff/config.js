@@ -69,9 +69,14 @@ const career = {
             Title: "Temporary Java Software engineer",
             Time: "Jun 2021 - Sep 2021",
             Descriptions: [
-                "Paired with a senior colleague with tasks within development and testing phases of iterative-based software development lifecycle, with on-job learning experience as a priority"
+                "• Paired with a senior colleague with tasks within development and testing phases " +
+                "of iterative-based software development lifecycle, with on-job learning experience as a priority",
+                "• Effectively troubleshoot and resolve issues within backend rule engine and object-oriented Java component, " +
+                "with active collaboration among hybrid team through Jira and Microsoft Teams",
+                "• Utilised up to date tech stack and related IT tools to assist development within the context of a government contracted IT project."
             ],
-            TechStack: ["Object-oriented Java, IBM Operational Decision Manager, mySQL, Jira, Git, GitLab, MobaXterm, Eclipse"],
+            TechStack: ["Object-oriented Java, IBM Operational Decision Manager, Business Action Language, mySQL, Jira, " +
+            "GitLab, MobaXterm, Eclipse"],
         }
     ]
 };
