@@ -18,11 +18,13 @@
 [![GitHub issues](https://img.shields.io/github/issues/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/issues)
 [![GitHub license](https://img.shields.io/github/license/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/blob/master/LICENSE)
 
-[![Site preview](/public/demo.gif)](https://calvin.sg)
+[![Site preview](/src/assets/demo-increment2.gif)](#increment-2-)
 
 ## Table of Contents
 
 * [Introduction 👋](#introduction-)
+* [Increment 1 🎂](#increment-1-)
+* [Increment 2 🧋](#increment-2-)
 * [Technology Stack 🛠️](#technology-stack-)
 * [Structure ⚓](#structure-)
 * [Sharing 💗](#sharing-)
@@ -39,6 +41,29 @@
 ## Introduction 👋
 
 A personal static website application hosted with Firebase, built with React to showcase my portfolio and recent projects.
+
+## Increment 1 🎂
+
+[![Site preview](/src/assets/demo-increment1.gif)](https://calvin.sg)
+
+Modified forked project to own information as portfolio website.
+1. Added 'Contact me' page with center-align contact form, react component: EmailJS sends contents of form via email
+2. Included 'Career' and 'Education' sections from [Xun Ding](https://github.com/xunxdd) forked project
+3. Modified hero media to include background 4-seconds loop video, react component: [React-player](https://www.npmjs.com/package/react-player)
+4. Added attribution in footer: Thanks to [Hashir Shoaeb](https://github.com/hashirshoaeb) for the original project, and [Xun Ding](https://github.com/xunxdd) for the modified project.
+5. Added Readme.md with video demo and proper structure
+
+## Increment 2 🧋
+
+[![Site preview](/src/assets/demo-increment2.gif)](https://calvin.sg)
+
+Added 'Final year project' section and implemented profile photo with responsive functionality
+1. Added Final year project section with video demo, react component: [React-player](https://www.npmjs.com/package/react-player)
+2. Modified profile photo with responsive functionality
+3. Multimedia elements have shadow and is interactive when mouse hover
+4. Updated navigation bar with sections left aligned and pages right aligned
+5. Added scroll to top element on home and contact page, react component: [react-scroll-to-top](https://www.npmjs.com/package/react-scroll-to-top)
+6. Added contact form button in "Get in touch section"
 
 ## Technology Stack 🛠️
 
