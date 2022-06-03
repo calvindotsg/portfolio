@@ -1,11 +1,11 @@
 $type-scales: (
-  minor-second: 1.067,
-  major-second: 1.125,
-  minor-third: 1.2,
-  major-third: 1.25,
-  perfect-fourth: 1.333,
-  augmented-fourth: 1.414,
-  perfect-fifth: 1.5,
+        minor-second: 1.067,
+        major-second: 1.125,
+        minor-third: 1.2,
+        major-third: 1.25,
+        perfect-fourth: 1.333,
+        augmented-fourth: 1.414,
+        perfect-fifth: 1.5,
 );
 
 $heading-type-scale-base: minor-third;
@@ -75,6 +75,7 @@ $display-type-scale-base: minor-third;
     font-size: $font-size-display-1;
   }
 }
+
 // Create the heading font sizes
 @include create-heading-type-scale($heading-type-scale-base);
 
@@ -86,7 +87,9 @@ $display-type-scale-base: minor-third;
 @media (min-width: 576px) {
   @include create-display-type-scale(major-second);
 }
+
 @media (min-width: 768px) {
   @include create-display-type-scale($display-type-scale-base);
 }
+
 $enable-responsive-font-sizes: true;

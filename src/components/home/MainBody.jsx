@@ -9,7 +9,7 @@ import heroVideo from "../../assets/hero.mp4";
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
-        height: '80vh',
+        height: '85vh',
         position: 'relative',
         '& video': {
             objectFit: 'cover',
@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
         left: 0,
         width: '100%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        backgroundColor: 'rgba(0, 0, 0, 0.25)',
     },
     title: {
         paddingBottom: theme.spacing(4),
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const MainBody = React.forwardRef(
-    ({gradient, title, message, icons}, ref) => {
+    ({title, message, icons}, ref) => {
 
         const classes = useStyles();
 
@@ -42,6 +42,21 @@ const MainBody = React.forwardRef(
                     muted
                     width="100%"
                     height="100%"
+                    fluid
+                    id="home"
+                    style={{
+                        backgroundSize: "1200% 1200%",
+                    }}
+                    className="
+                    title
+                    bg-transparent
+                    bgstyle
+                    text-light
+                    {/*min-vh-100*/}
+                    d-flex
+                    align-content-center
+                    align-items-center
+                    flex-wrap m-0"
                 />
                 <div id="stars"></div>
                 <div className={classes.overlay}>

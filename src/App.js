@@ -1,5 +1,6 @@
 import React from "react";
 import {BrowserRouter, Route} from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
 import {
     navBar,
     mainBody,
@@ -9,12 +10,14 @@ import {
     career,
     onlineWritings,
     education,
+    finalYearProject
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import FinalYearProject from "./components/home/FinalYearProject";
 import Career from "./components/home/Career";
 import Education from "./components/home/Education";
 import GetInTouch from "./components/home/GetInTouch.jsx";
@@ -24,8 +27,8 @@ import FormsContacts from "./components/contact/FormsContacts";
 const Home = React.forwardRef((props, ref) => {
     return (
         <>
+            <ScrollToTop smooth color="#3A5079" />
             <MainBody
-                gradient={mainBody.gradientColors}
                 title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
                 message={mainBody.message}
                 icons={mainBody.icons}
@@ -38,6 +41,12 @@ const Home = React.forwardRef((props, ref) => {
                     link={about.imageLink}
                     imgSize={about.imageSize}
                     resume={about.resume}
+                />
+            )}
+            {finalYearProject.show && (
+                <FinalYearProject
+                    heading={finalYearProject.heading}
+                    finalYearProjectList={finalYearProject.lists}
                 />
             )}
 
@@ -77,8 +86,8 @@ const Home = React.forwardRef((props, ref) => {
 const Contact = React.forwardRef((props, ref) => {
     return (
         <>
+            <ScrollToTop smooth color="#3A5079" />
             <MainBody
-                gradient={mainBody.gradientColors}
                 title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
                 message={mainBody.message}
                 icons={mainBody.icons}

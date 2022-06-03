@@ -1,3 +1,13 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+// bootstrap overrides
+$primary: rgb(59, 80, 121) ;
+$secondary: #F7F7F7;
+$light: #FFFFFF;
+
+
 html {
   font-size: 14px;
   @media (min-width: 768px) {
@@ -48,31 +58,38 @@ code {
   background-color: rgba(255, 255, 255, 0.5);
   transition: background-color 0.2s;
 }
+
 .navbar-white {
   background-color: rgba(234, 236, 239, 0.81);
   transition: background-color 0.2s;
 }
+
 .brand {
   color: #363636 !important;
 }
+
 .nav-link {
   transition: color, 0.2s;
 }
+
 .toggler {
   border: none;
   padding: 4px;
   border-radius: 4px;
+
   &:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.05);
   }
 }
+
 .socialicons {
   color: white;
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
   margin: 4px;
+
   &:hover {
     color: black;
     padding-left: 5px;
@@ -103,15 +120,18 @@ code {
 
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
+
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
     transform: translateY(-2px);
     transition: transform 0.3s, box-shadow 0.3s;
   }
 }
+
 .skills-tabs {
   flex-grow: 1;
 }
+
 .skills-tab {
   flex-grow: 1;
   text-align: center;
@@ -119,13 +139,27 @@ code {
 
 .progress {
   transform-origin: left;
+
   & > * {
     transform: scaleX(0);
   }
 }
+
 .progress-bar-animation {
   @extend .progress;
+
   & > * {
     animation: progress 1.5s ease-in-out forwards;
   }
+}
+
+.card-image {
+  transition: all .3s;
+  border-radius: $card-border-radius;
+  box-shadow: 1rem 1rem $primary;
+}
+
+.card-image:hover {
+  transform: translate(-0.5rem, -0.5rem);
+  box-shadow: 2rem 2rem $primary;
 }

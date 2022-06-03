@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
+  "description": "A personal static website/portfolio template hosted with Firebase, built to showcase my portfolio and recent projects.",
   "homepage": "https://calvin.sg",
   "version": "2.0.1",
   "private": true,
@@ -27,6 +27,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
+    "react-scroll-to-top": "^1.0.8",
     "react-typist": "^2.0.5",
     "semantic-ui-react": "^2.1.3",
     "sweetalert2": "^11.4.17",

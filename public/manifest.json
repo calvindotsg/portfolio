@@ -16,7 +16,7 @@
       "src": "favicon.svg",
       "type": "image/svg",
       "sizes": "512x512"
-    }	    
+    }
   ],
   "start_url": ".",
   "display": "standalone",

@@ -6,10 +6,10 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
     gradientColors: "#4484ce, #1ad7c0, #808080, #9b59b6, #ff7f7f, #ecf0f1",
-    firstName: "Hi 👋 I'm ",
+    firstName: "👋 Hi, I'm ",
     middleName: "",
     lastName: "Calvin",
-    message: " Software Engineer. Enthusiastic learner. ",
+    message: " Software Engineer. Enthusiastic learner. Road cyclist. ",
 
     icons: [
         {
@@ -30,6 +30,33 @@ const about = {
     imageSize: 250,
     messages: ["I seek an practical experiences where opportunities for learning are actively up for grabs. I am grateful for each challenge, presenting itself as a valuable learning opportunity."],
     resume: require("../editable-stuff/Resume_Calvin.pdf"),
+};
+
+const finalYearProject = {
+    show: true,
+    heading: "Final year project",
+    lists: [
+        {
+            ProjectTitle: "A web app utilising backend rule-based decision-making in recommending location for food and beverage outlets with desired attributes for customers",
+            DegreeTitle: "Bachelor of Science Computing and Information Systems",
+            Title: "Undergraduate",
+            Time: "Sep 2021 - May 2022",
+            ProjectLink: "https://fyp-calvinloh-190428332.web.app/",
+            GithubLink: "https://github.com/calvin-sg/Final-year-project",
+            Descriptions: [
+                "Introduction: ",
+                "• Problem statement identified as shortfalls in current methods among F&B management." ,
+                "• Project scope is in understanding customers motivations and location scouting for new outlets." ,
+                "• Status quo involves the techniques used to gather customer desired attributes and optimal outlet location relies on mainly human intuition " +
+                "and limited information technology tools, as identified in literature review and requirement gathering." ,
+                "How it works:",
+                "1. The proposed web application seeks to gather customer’s motivations, distill into these distinct criteria as input into this application." ,
+                "2. Thereafter, this project aims to use rule-based decision-making based on specific business rules and customer inputs." ,
+                "3. The output of rule engine is displayed on the web application as a map with markers of target customers frequented locations and feature tiles for each desired attribute your restaurant is recommended to provide."
+            ],
+            TechStack: ["React, json-rule-engine, mapbox-gl, json-forms, emailjs, sweetalert2, JetBrains WebStorm"],
+        }
+    ]
 };
 
 const career = {
@@ -113,5 +140,5 @@ const getInTouch = {
 
 export {
     navBar, mainBody, about, getInTouch,
-    career, education, onlineWritings, repos
+    career, education, onlineWritings, repos, finalYearProject
 };
