@@ -8,7 +8,10 @@ const Footer = (props) => {
         <footer style={bgStyle} className="mt-auto py-5 text-center ">
             <Container>
                 {props.children}
-                Built with <i className="fas fa-heart" style={{color: "red"}}/> using <i className="fab fa-react" style={{color: "blue"}}/>.
+                Built with{" "}
+                <i className="fas fa-heart" style={{color: "red"}}/>
+                {" "}using{" "}
+                <i className="fab fa-react" style={{color: "blue"}}/>.
 
                 <br/>
                 Code available at{" "}
@@ -28,19 +31,22 @@ const Footer = (props) => {
                     className="badge badge-dark"
                     rel="noopener"
                     target=" _blank"
-                    href="https://github.com/hashirshoaeb"
+                    href="https://github.com/hashirshoaeb/home"
                     aria-label="My GitHub"
                 >
-                    Hashir Shoaib
+                    <i className="fab fa-github"/>{" "}
+                    hashirshoaeb/home
                 </a>{" & "}
                 <a
                     className="badge badge-dark"
                     rel="noopener"
                     target=" _blank"
-                    href="https://github.com/xunxdd"
+                    href="https://github.com/xunxdd/portfolio/tree/master"
                     aria-label="My GitHub"
                 >
-                    Xun Ding
+                    <i className="fab fa-github"/>{" "}
+                    xunxdd/portfolio
+
                 </a>
 
             </Container>

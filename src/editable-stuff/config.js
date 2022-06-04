@@ -13,13 +13,21 @@ const mainBody = {
 
     icons: [
         {
-            image: "fa-github",
+            image: "fab fa-github",
             url: "https://github.com/calvin-sg",
         },
         {
-            image: "fa-linkedin",
+            image: "fab fa-linkedin",
             url: "https://www.linkedin.com/in/calvin-loh",
         },
+        {
+            image: "fas fa-envelope",
+            url: "/contact",
+        },
+        {
+            image: "fas fa-file",
+            url: require("../editable-stuff/Resume_Calvin.pdf"),
+        }
     ],
 };
 
