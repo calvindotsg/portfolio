@@ -14,6 +14,7 @@ const FinalYearProjectCard = ({value}) => {
         Descriptions,
         TechStack,
     } = value;
+
     return (
         <Col md="12">
             < div className="p-3 mb-2">

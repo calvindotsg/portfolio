@@ -26,9 +26,10 @@ const mainBody = {
 const about = {
     show: true,
     heading: "About Me",
-    imageLink: require("./me.jpg"),
+    imageLink: require("./profile-photo.jpg"),
     imageSize: 250,
-    messages: ["I seek an practical experiences where opportunities for learning are actively up for grabs. I am grateful for each challenge, presenting itself as a valuable learning opportunity."],
+    messages: ["I seek an practical experiences where opportunities for learning are actively up for grabs. " +
+    "I am grateful for each challenge, each being a valuable learning opportunity."],
     resume: require("../editable-stuff/Resume_Calvin.pdf"),
 };
 
@@ -137,9 +138,9 @@ const repos = {
 // GET IN TOUCH SECTION
 const getInTouch = {
     show: true,
-    heading: "Contact me",
+    heading: "Say hi 👋",
     message:
-        "Drop me a mail or just to say hi",
+        "Have an interesting project or an opportunity? Let's get in touch!",
     email: "hello [at] calvin.sg",
 };
 

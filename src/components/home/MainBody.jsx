@@ -5,6 +5,7 @@ import Box from '@material-ui/core/Box';
 import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 import heroVideo from "../../assets/hero.mp4";
+import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -68,36 +69,38 @@ const MainBody = React.forwardRef(
                         alignItems="center"
                         color="#fff"
                     >
-                        <Container className="text-center">
-                            <h1 ref={ref} className="display-1">
-                                {title}
-                            </h1>
-                            <Typist className="lead typist" cursor={{show: true}}>
-                                {" "}
-                                {message}
-                            </Typist>
-                            <div className="p-5">
-                                {icons.map((icon, index) => (
-                                    <a
-                                        key={`social-icon-${index}`}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        href={icon.url}
-                                        aria-label={`My ${icon.image.split("-")[1]}`}
-                                    >
-                                        <i className={`fab ${icon.image}  fa-3x socialicons`}/>
-                                    </a>
-                                ))}
-                            </div>
-                            <a
-                                className="btn btn-outline-light btn-lg "
-                                href="/#aboutme"
-                                role="button"
-                                aria-label="Learn more about me"
-                            >
-                                More about me
-                            </a>
-                        </Container>
+                        <SlideUpWhenVisible>
+                            <Container className="text-center">
+                                <h1 ref={ref} className="display-1">
+                                    {title}
+                                </h1>
+                                <Typist className="lead typist" cursor={{show: true}}>
+                                    {" "}
+                                    {message}
+                                </Typist>
+                                <div className="p-5">
+                                    {icons.map((icon, index) => (
+                                        <a
+                                            key={`social-icon-${index}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            href={icon.url}
+                                            aria-label={`My ${icon.image.split("-")[1]}`}
+                                        >
+                                            <i className={`fab ${icon.image}  fa-3x socialicons`}/>
+                                        </a>
+                                    ))}
+                                </div>
+                                <a
+                                    className="btn btn-outline-light btn-lg "
+                                    href="/#aboutme"
+                                    role="button"
+                                    aria-label="Learn more about me"
+                                >
+                                    More about me
+                                </a>
+                            </Container>
+                        </SlideUpWhenVisible>
                     </Box>
                 </div>
             </section>

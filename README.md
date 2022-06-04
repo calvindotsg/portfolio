@@ -18,20 +18,22 @@
 [![GitHub issues](https://img.shields.io/github/issues/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/issues)
 [![GitHub license](https://img.shields.io/github/license/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/blob/master/LICENSE)
 
-[![Site preview](/src/assets/demo-increment2.gif)](#increment-2-)
+[![Site preview](/src/assets/demo-increment2-1.gif)](https://github.com/calvin-sg/portfolio#increment-2-1-)
 
 ## Table of Contents
 
 * [Introduction 👋](#introduction-)
-* [Increment 1 🎂](#increment-1-)
-* [Increment 2 🧋](#increment-2-)
+* [Development documentation 📚](#development-documentation-)
+  * [Increment 1 🎂](#increment-1-)
+  * [Increment 2 🧋](#increment-2-)
+  * [Increment 2.1 🎁](#increment-2-1-)
 * [Technology Stack 🛠️](#technology-stack-)
 * [Structure ⚓](#structure-)
 * [Sharing 💗](#sharing-)
 * [Prerequisites 🍪](#prerequisites-)
 * [Setup And Deployment 🔧](#setup-and-deployment-)
-* [Terms and License](#terms-and-license)
-* [Usage](#usage)
+* [Terms and License 🔖](#terms-and-license)
+* [Usage 🏗](#usage)
     * [Available Scripts](#available-scripts)
         * [npm start](#npm-start)
         * [npm test](#npm-test)
@@ -42,18 +44,20 @@
 
 A personal static website application hosted with Firebase, built with React to showcase my portfolio and recent projects.
 
-## Increment 1 🎂
+## Development documentation 📚
+
+### Increment 1 🎂
 
 [![Site preview](/src/assets/demo-increment1.gif)](https://calvin.sg)
 
 Modified forked project to own information as portfolio website.
-1. Added 'Contact me' page with center-align contact form, react component: EmailJS sends contents of form via email
+1. Added 'Contact me' page with center-align contact form, react component: semantic-ui-react for form elements and EmailJS sends contents of form via email
 2. Included 'Career' and 'Education' sections from [Xun Ding](https://github.com/xunxdd) forked project
 3. Modified hero media to include background 4-seconds loop video, react component: [React-player](https://www.npmjs.com/package/react-player)
 4. Added attribution in footer: Thanks to [Hashir Shoaeb](https://github.com/hashirshoaeb) for the original project, and [Xun Ding](https://github.com/xunxdd) for the modified project.
 5. Added Readme.md with video demo and proper structure
 
-## Increment 2 🧋
+### Increment 2 🧋
 
 [![Site preview](/src/assets/demo-increment2.gif)](https://calvin.sg)
 
@@ -64,6 +68,17 @@ Added 'Final year project' section and implemented profile photo with responsive
 4. Updated navigation bar with sections left aligned and pages right aligned
 5. Added scroll to top element on home and contact page, react component: [react-scroll-to-top](https://www.npmjs.com/package/react-scroll-to-top)
 6. Added contact form button in "Get in touch section"
+
+### Increment 2.1 🎁
+
+[![Site preview](/src/assets/demo-increment2-1.gif)](https://calvin.sg)
+
+1. Cleaned up implementation of contact form
+2. Added 'About' section to 'Contact' page to fix white space issue
+3. Added SlideUpWhenVisible animation to all sections in 'Home' and 'Contact' page
+4. Moved 'Get in touch' section from footer to 'Home' page
+5. Changed profile photo
+6. Removed unnecessary images from forked project
 
 ## Technology Stack 🛠️
 

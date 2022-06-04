@@ -1,117 +1,24 @@
-/* Code adapted from Citation and Sources –
-*   title = {cruip/open-react-template v1.0.0},
-	copyright = {Released under the GPL. Copyright 2020 Cruip.},
-	url = {https://github.com/cruip/open-react-template},
-	abstract = {A free React landing page template designed to showcase open source projects, SaaS products, online services, and more. Made by cruip.com},
-	urldate = {2022-04-25},
-	publisher = {Cruip},
-	author = {Vitiello, Pasquale and Pacilio, Davide},
-	month = apr,
-	year = {2022},
-	note = {original-date: 2020-04-06T13:28:34Z},
-	*
-*   title = {mui/material-ui},
-	copyright = {MIT license},
-	url = {https://github.com/mui/material-ui/blob/v5.6.2/docs/data/material/components/accordion/BasicAccordion.js},
-	abstract = {MUI Core (formerly Material-UI) is the React UI library you always wanted. Follow your own design system, or start with Material Design. - GitHub - mui/material-ui at v5.6.2},
-	urldate = {2022-04-25},
-	publisher = {MUI},
-	author = {Siriwat, K},
-	month = feb,
-	year = {2022},
-	*
-*   title = {emailjs-com/emailjs-sdk},
-	copyright = {BSD-3-Clause},
-	url = {https://github.com/emailjs-com/emailjs-sdk},
-	abstract = {EmailJS helps sending emails using client side technologies only. No server is required.},
-	urldate = {2022-04-26},
-	publisher = {EmailJS},
-	author = {emailjs-com},
-	month = apr,
-	year = {2022},
-	note = {original-date: 2018-03-04T19:17:59Z},
-	*
-*   title = {Semantic-Org/Semantic-UI-React},
-	copyright = {MIT},
-	url = {https://github.com/Semantic-Org/Semantic-UI-React},
-	abstract = {The official Semantic-UI-React integration},
-	urldate = {2022-04-26},
-	publisher = {Semantic Org},
-	author = {Semantic-Org},
-	month = feb,
-	year = {2022},
-	note = {original-date: 2015-06-19T16:47:19Z},
-	*
-*   title = {sweetalert2/sweetalert2},
-	copyright = {MIT},
-	url = {https://github.com/sweetalert2/sweetalert2},
-	abstract = {A beautiful, responsive, highly customizable and accessible (WAI-ARIA) replacement for JavaScript's popup boxes. Zero dependencies.},
-	urldate = {2022-04-26},
-	publisher = {SweetAlert2},
-	author = {sweetalert2},
-	month = apr,
-	year = {2022},
-	note = {original-date: 2015-01-03T16:15:52Z},
-*/
-
 import React from 'react';
+import Container from "react-bootstrap/Container";
+import Jumbotron from "react-bootstrap/Jumbotron";
 import emailjs from 'emailjs-com';
 import {Form, Input, TextArea, Button} from 'semantic-ui-react';
 import Swal from 'sweetalert2';
+import {
+    Flex,
+    Stack,
+} from '@chakra-ui/react';
 
-import classNames from 'classnames';
-import {SectionProps} from '../../utils/SectionProps';
-
-import {makeStyles} from '@mui/styles';
-
-const propTypes = {
-    ...SectionProps.types
-}
-
-const defaultProps = {
-    ...SectionProps.defaults
-}
-
-const useStyles = makeStyles({
-    demoform: {
-        border: '1px solid lightgray',
-        padding: '10px',
-        margin: '20px',
-        textAlign: 'center'
-    },
-});
+import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
 
 const SERVICE_ID = "service_3fy1t3n";
 const TEMPLATE_ID = "template_ij57nui";
 const USER_ID = "8ZvOnMBYYPrI1Q8ly";
 
 const FormsContacts = ({
-                           className,
-                           topOuterDivider,
-                           bottomOuterDivider,
-                           topDivider,
-                           bottomDivider,
-                           hasBgColor,
-                           invertColor,
-                           ...props
+                           heading,
+                           message
                        }) => {
-
-    const classes = useStyles();
-
-    const outerClasses = classNames(
-        'hero section center-content',
-        topOuterDivider && 'has-top-divider',
-        bottomOuterDivider && 'has-bottom-divider',
-        hasBgColor && 'has-bg-color',
-        invertColor && 'invert-color',
-        className
-    );
-
-    const innerClasses = classNames(
-        'hero-inner section-inner',
-        topDivider && 'has-top-divider',
-        bottomDivider && 'has-bottom-divider'
-    );
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
@@ -134,68 +41,101 @@ const FormsContacts = ({
     };
 
     return (
-        <section
-            {...props}
-            className={outerClasses}
-        >
-            <div className="container-sm">
-                <div className={innerClasses}>
-                    <h1 className="text-center">Contact me</h1>
-                    <p className="lead text-center pb-3">
-                        Drop me a mail or just to say hi
-                    </p>
-                    {/* <!-- contact form --> */}
-                    <div className={classes.demoform}>
-                        <Form onSubmit={handleOnSubmit}>
-                            <Form.Field
-                                id='form-input-control-email'
-                                control={Input}
-                                label='Email'
-                                name='from_email'
-                                placeholder='Enter your email'
-                                required
-                                icon='mail'
-                                iconPosition='left'
-                            />
-                            <Form.Field
-                                id='form-input-control-last-name'
-                                control={Input}
-                                label='Name'
-                                name='from_name'
-                                placeholder='Enter your name'
-                                required
-                                icon='user circle'
-                                iconPosition='left'
-                            />
-                            <Form.Field
-                                id='form-input-control-last-name'
-                                control={Input}
-                                label='Subject'
-                                name='from_subject'
-                                placeholder='Enter your subject'
-                                required
-                                icon='user circle'
-                                iconPosition='left'
-                            />
-                            <label for="form-textarea-control-opinion">Message</label>
-                            <Form.Field
-                                id='form-textarea-control-opinion'
-                                control={TextArea}
-                                name='message'
-                                placeholder='Enter your message'
-                                required
-                            />
-                            <Button type='submit' color='green'>Submit</Button>
-                        </Form>
-                    </div>
-                    {/* <!-- end contact form --> */}
-                </div>
-            </div>
-        </section>
+        <Jumbotron fluid id="formContacts" className="bg-light m-0 target-section">
+            <SlideUpWhenVisible>
+                <Container className="shadow-lg p-3 mb-5 bg-white rounded">
+                    <Stack spacing={6}>
+                        <h2 className="display-4 pb-5 text-center">
+                            {heading}
+                        </h2>
+                        <p className="lead text-center pb-3">
+                            {message}
+                        </p>
+
+                        <Flex className="contact" justify="center" id="contact">
+                            {/* <!-- contact form --> */}
+                            <Form
+                                onSubmit={handleOnSubmit}
+                            >
+                                <Stack spacing={6} width="inherit">
+
+                                    <label
+                                        className="lead text-center"
+                                    >
+                                        Name
+                                    </label>
+                                    <Form.Field>
+                                        <Input
+                                            id='form-input-control-last-name'
+                                            control={Input}
+                                            placeholder='name'
+                                            name= 'from_name'
+                                            required
+                                        />
+                                    </Form.Field>
+
+                                    <label
+                                        className="lead text-center"
+                                    >
+                                        Email
+                                    </label>
+                                    <Form.Field>
+                                        <Input
+                                            // className="fields"
+                                            id='form-input-control-email'
+                                            control={Input}
+                                            name='from_email'
+                                            placeholder='email'
+                                            required
+                                        />
+                                    </Form.Field>
+
+                                    <label
+                                        className="lead text-center"
+                                    >
+                                        Subject
+                                    </label>
+                                    <Form.Field>
+                                        <Input
+                                            // className="fields"
+                                            id='form-input-control-subject'
+                                            control={Input}
+                                            name='from_subject'
+                                            placeholder='subject'
+                                            required
+                                        />
+                                    </Form.Field>
+
+                                    <label
+                                        className="lead text-center"
+                                    >
+                                        Message
+                                    </label>
+                                    <Form.Field
+                                        id='form-textarea-control-opinion'
+                                        control={TextArea}
+                                        name='message'
+                                        placeholder='Enter your message'
+                                        required
+                                    />
+
+                                    <Button
+                                        className="btn btn-outline-dark btn-lg"
+                                        type='submit'
+                                        color='green'
+                                    >
+                                        Submit
+                                    </Button>
+
+                                </Stack>
+                            </Form>
+                            {/* <!-- end contact form --> */}
+                        </Flex>
+                    </Stack>
+                </Container>
+            </SlideUpWhenVisible>
+        </Jumbotron>
     );
 }
-
-FormsContacts.propTypes = propTypes;
-FormsContacts.defaultProps = defaultProps;
 
 export default FormsContacts;

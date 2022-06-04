@@ -10,9 +10,10 @@ const CareerCard = ({value}) => {
         Descriptions,
         TechStack,
     } = value;
+
     return (
         <Col md="12">
-            < div className="p-3 mb-2">
+            <div className="p-3 mb-2">
                 <h5>{CompanyName} - <span className="text-muted text-secondary">{Address}</span></h5>
 
                 <div className="card-text">

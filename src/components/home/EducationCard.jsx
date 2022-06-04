@@ -7,6 +7,7 @@ const EducationCard = ({value}) => {
         university,
         time
     } = value;
+
     return (
         <Col md="12">
             < div className="p-2">

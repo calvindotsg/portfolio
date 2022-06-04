@@ -6,12 +6,14 @@ import Nav from "react-bootstrap/Nav";
 import {mainBody, about, career, education, onlineWritings, finalYearProject} from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
+
     const [isTop, setIsTop] = useState(true);
     const [scrollPosition, setScrollPosition] = useState(0);
     const [active, setActive] = useState('home');
     const navbarMenuRef = React.useRef();
     const navbarDimensions = useResizeObserver(navbarMenuRef);
     const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
+
     useScrollPosition(
         ({prevPos, currPos}) => {
             if (!navbarDimensions) return;

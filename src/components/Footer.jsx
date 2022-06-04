@@ -19,7 +19,8 @@ const Footer = (props) => {
                     href="https://github.com/calvin-sg/portfolio"
                     aria-label="portfolio"
                 >
-                    <i className="fab fa-github"/> My portfolio
+                    <i className="fab fa-github"/>{" "}
+                    calvin-sg/portfolio
                 </a>
                 <br/>
                 Forked from original code <i className="fas fa-code"/> by{" "}
