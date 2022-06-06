@@ -18,7 +18,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/issues)
 [![GitHub license](https://img.shields.io/github/license/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/blob/master/LICENSE)
 
-[![Site preview](/src/assets/demo-increment2-1.gif)](https://github.com/calvin-sg/portfolio#increment-2-1-)
+[![Site preview](/ReadmeDocs/demo-increment2-2.gif)](https://github.com/calvin-sg/portfolio#increment-2-2-)
 
 ## Table of Contents
 
@@ -27,9 +27,11 @@
   * [Increment 1 🎂](#increment-1-)
   * [Increment 2 🧋](#increment-2-)
   * [Increment 2.1 🎁](#increment-2-1-)
+  * [Increment 2.2 🍜](#increment-2-2-)
 * [Technology Stack 🛠️](#technology-stack-)
 * [Structure ⚓](#structure-)
 * [Sharing 💗](#sharing-)
+* [Future increments 🚀](#future-increments-)
 * [Prerequisites 🍪](#prerequisites-)
 * [Setup And Deployment 🔧](#setup-and-deployment-)
 * [Terms and License 🔖](#terms-and-license)
@@ -46,9 +48,9 @@ A personal static website application hosted with Firebase, built with React to 
 
 ## Development documentation 📚
 
-### Increment 1 🎂
+Additional documentation can be found in [ReadmeDocs](https://github.com/calvin-sg/portfolio/tree/master/ReadmeDocs).
 
-[![Site preview](/src/assets/demo-increment1.gif)](https://calvin.sg)
+### Increment 1 🎂
 
 Modified forked project to own information as portfolio website.
 1. Added 'Contact me' page with center-align contact form, react component: semantic-ui-react for form elements and EmailJS sends contents of form via email
@@ -58,8 +60,6 @@ Modified forked project to own information as portfolio website.
 5. Added Readme.md with video demo and proper structure
 
 ### Increment 2 🧋
-
-[![Site preview](/src/assets/demo-increment2.gif)](https://calvin.sg)
 
 Added 'Final year project' section and implemented profile photo with responsive functionality
 1. Added Final year project section with video demo, react component: [React-player](https://www.npmjs.com/package/react-player)
@@ -71,14 +71,19 @@ Added 'Final year project' section and implemented profile photo with responsive
 
 ### Increment 2.1 🎁
 
-[![Site preview](/src/assets/demo-increment2-1.gif)](https://calvin.sg)
-
 1. Cleaned up implementation of contact form
 2. Added 'About' section to 'Contact' page to fix white space issue
 3. Added SlideUpWhenVisible animation to all sections in 'Home' and 'Contact' page
 4. Moved 'Get in touch' section from footer to 'Home' page
 5. Changed profile photo
 6. Removed unnecessary images from forked project
+
+### Increment 2.2 🍜
+
+1. Implemented improved video player for 'Final year project' section using native HTML `<video />` element. 
+   1. Video do not preload to improve web page loading time.
+   2. Added wrapper using SCSS to prevent content jumping during transition between image of video poster and actual video.
+2. Changed 'Resume' icon to a more intuitive design indicating PDF format, based on usability studies.
 
 ## Technology Stack 🛠️
 
@@ -125,6 +130,11 @@ Dependencies defined in package.json:
 Project is open source. Feel free to make your own version. All you need to do is to fork this repository,
 edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
 
+## Future increments 🚀
+
+1. Add Form validation for contact form, i.e. not empty fields and valid email address
+2. Implementation of video player react component instead of native HTML `<video />` element, without preload to reduce web page loading time
+
 ## Prerequisites 🍪
 
 You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your PC. You should also
@@ -169,7 +179,7 @@ own a GitHub account.
    ```
 
    Or for deployment at \<username>.github.io,
-   refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
+   refer [READMEdocs/custom-deployment.md](ReadmeDocs/custom-deployment.md) and [pages.js](./pages.js)
 
 9. Congrats your site is up and running. To see it live, visit:
 

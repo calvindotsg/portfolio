@@ -5,7 +5,7 @@ const Footer = (props) => {
     const bgStyle = {backgroundColor: "#f5f5f5"};
 
     return (
-        <footer style={bgStyle} className="mt-auto py-5 text-center ">
+        <footer style={bgStyle} className="mt-auto py-5 text-center">
             <Container>
                 {props.children}
                 Built with{" "}
@@ -24,9 +24,9 @@ const Footer = (props) => {
                 >
                     <i className="fab fa-github"/>{" "}
                     calvin-sg/portfolio
-                </a>
+                </a>{"."}
                 <br/>
-                Forked from original code <i className="fas fa-code"/> by{" "}
+                Forked from original code{" "}<i className="fas fa-code"/>{" "}by{" "}
                 <a
                     className="badge badge-dark"
                     rel="noopener"
@@ -47,7 +47,7 @@ const Footer = (props) => {
                     <i className="fab fa-github"/>{" "}
                     xunxdd/portfolio
 
-                </a>
+                </a>{"."}
 
             </Container>
         </footer>

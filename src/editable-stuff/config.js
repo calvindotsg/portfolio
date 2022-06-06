@@ -25,7 +25,7 @@ const mainBody = {
             url: "/contact",
         },
         {
-            image: "fas fa-file",
+            image: "fas fa-file-pdf",
             url: require("../editable-stuff/Resume_Calvin.pdf"),
         }
     ],

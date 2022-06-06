@@ -1,6 +1,6 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import ReactPlayer from "react-player";
+import DemoPoster from "../../assets/FYP-Demo.png";
 import DemoLink from "../../assets/FYP-Demo.mp4";
 
 const FinalYearProjectCard = ({value}) => {
@@ -17,24 +17,32 @@ const FinalYearProjectCard = ({value}) => {
 
     return (
         <Col md="12">
-            < div className="p-3 mb-2">
+            <div className="p-3 mb-2">
                 <h5>{ProjectTitle} - <span className="text-muted text-secondary">{Time}</span></h5>
-
                 <div className="card-text">
-                    <div>{Title} - <span className="text-secondary">{DegreeTitle}</span></div>
-                    <ReactPlayer
-                        className="img-fluid my-3 card-image"
-                        url={DemoLink}
-                        playing
-                        loop
-                        muted
-                        width="95%"
-                        height="95%"
-                    />
+                        <div>{Title} - <span className="text-secondary">{DegreeTitle}</span></div>
+                    <div
+                        className="wrapper"
+                    >
+                        <video
+                            className="img-fluid my-3 card-image wrapper__img"
+                            controls
+                            loop
+                            muted
+                            preload="none"
+                            poster={DemoPoster}
+                            title="Final year project demo video"
+                        >
+                            <source
+                                src={DemoLink}
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
                     <div className="my-2"> {
                         Descriptions.map((description, index) => (
                             <div className="lead"
-                               key={`finalYearProject-description-${index}`}
+                                 key={`finalYearProject-description-${index}`}
                             >{description}</div>
                         ))
                     }</div>
@@ -78,6 +86,5 @@ const FinalYearProjectCard = ({value}) => {
         </Col>
     );
 };
-
 
 export default FinalYearProjectCard;
