@@ -16,6 +16,7 @@
 /.idea
 /.firebase
 /.git
+/src/components/contact/FormVariables.js
 firebase.json
 .firebaserc
 .DS_Store

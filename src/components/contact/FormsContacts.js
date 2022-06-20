@@ -10,10 +10,11 @@ import {
 } from '@chakra-ui/react';
 
 import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
+import FormVariables from "./FormVariables";
 
-const SERVICE_ID = "service_3fy1t3n";
-const TEMPLATE_ID = "template_ij57nui";
-const USER_ID = "8ZvOnMBYYPrI1Q8ly";
+const SERVICE_ID = FormVariables.formCredentials.SERVICE_ID;
+const TEMPLATE_ID = FormVariables.formCredentials.TEMPLATE_ID;
+const USER_ID = FormVariables.formCredentials.USER_ID;
 
 const FormsContacts = ({
                            heading,
