@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Jumbotron from "react-bootstrap/Jumbotron";
+
 import Quote from "./Quote";
 import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
 

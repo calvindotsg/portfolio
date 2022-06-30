@@ -3,6 +3,7 @@ import {useScrollPosition} from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+
 import {mainBody, about, career, education, onlineWritings, finalYearProject} from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
@@ -62,7 +63,8 @@ const Navigation = React.forwardRef((props, ref) => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     {about.show && <NavLink title="About" active={active} anchor="aboutme"/>}
-                    {finalYearProject.show && <NavLink title="Final year project" active={active} anchor="finalYearProject"/>}
+                    {finalYearProject.show &&
+                        <NavLink title="Final year project" active={active} anchor="finalYearProject"/>}
                     {career.show && <NavLink title="Career" active={active} anchor="career"/>}
                     {education.show && <NavLink title="Education" active={active} anchor="education"/>}
                     {onlineWritings.show && <NavLink title="Writings" active={active} anchor="publication"/>}
@@ -70,7 +72,7 @@ const Navigation = React.forwardRef((props, ref) => {
                 <Nav className="ml-auto">
                     <Nav.Link
                         className="nav-link lead"
-                        href= "/"
+                        href="/"
                         rel="noreferrer noopener"
                     >
                         Home

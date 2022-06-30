@@ -4,6 +4,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+
 import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
 
 const dummyProject = {
@@ -16,12 +17,12 @@ const dummyProject = {
 };
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
-// const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
+// const specficQuerry = "https://api.github.com/repos/calvindotsg/";
 
-const Project = ({heading, username, length, specfic}) => {
+const Project = ({heading, username, length, specific}) => {
     const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
-    const specficReposAPI = `${API}/repos/${username}`;
-    const dummyProjectsArr = new Array(length + specfic.length).fill(
+    const specificReposAPI = `${API}/repos/${username}`;
+    const dummyProjectsArr = new Array(length + specific.length).fill(
         dummyProject
     );
 
@@ -36,8 +37,8 @@ const Project = ({heading, username, length, specfic}) => {
             repoList = [...response.data.slice(0, length)];
             // adding specified repos
             try {
-                for (let repoName of specfic) {
-                    const response = await axios.get(`${specficReposAPI}/${repoName}`);
+                for (let repoName of specific) {
+                    const response = await axios.get(`${specificReposAPI}/${repoName}`);
                     repoList.push(response.data);
                 }
             } catch (error) {
@@ -49,7 +50,7 @@ const Project = ({heading, username, length, specfic}) => {
         } catch (error) {
             console.error(error.message);
         }
-    }, [allReposAPI, length, specfic, specficReposAPI]);
+    }, [allReposAPI, length, specific, specificReposAPI]);
 
     useEffect(() => {
         fetchRepos();
