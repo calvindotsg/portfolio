@@ -19,11 +19,11 @@ const Footer = (props) => {
                     className="badge badge-dark"
                     rel="noopener"
                     target=" _blank"
-                    href="https://github.com/calvin-sg/portfolio"
+                    href="https://github.com/calvindotsg/portfolio"
                     aria-label="portfolio"
                 >
                     <i className="fab fa-github"/>{" "}
-                    calvin-sg/portfolio
+                    calvindotsg/portfolio
                 </a>{"."}
                 <br/>
                 Forked from original code{" "}<i className="fas fa-code"/>{" "}by{" "}

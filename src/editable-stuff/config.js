@@ -13,7 +13,7 @@ const mainBody = {
     icons: [
         {
             image: "fab fa-github",
-            url: "https://github.com/calvin-sg",
+            url: "https://github.com/calvindotsg",
         },
         {
             image: "fab fa-linkedin",
@@ -51,7 +51,7 @@ const finalYearProject = {
             Title: "Undergraduate",
             Time: "Sep 2021 - May 2022",
             ProjectLink: "https://fyp-calvinloh-190428332.web.app/",
-            GithubLink: "https://github.com/calvin-sg/Final-year-project",
+            GithubLink: "https://github.com/calvindotsg/Final-year-project",
             Descriptions: [
                 "• Problem statement: Identified as shortfalls in current methods among F&B management.",
                 "• Project scope: Customers motivations and location scouting for new outlets.",
@@ -143,7 +143,7 @@ const onlineWritings = {
 const repos = {
     show: true,
     heading: "Recent Projects",
-    gitHubUsername: "calvin-sg", //i.e."johnDoe12Gh"
+    gitHubUsername: "calvindotsg", //i.e."johnDoe12Gh"
     reposLength: 4,
     specificRepos: [],
 };

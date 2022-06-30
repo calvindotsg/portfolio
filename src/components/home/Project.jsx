@@ -17,7 +17,7 @@ const dummyProject = {
 };
 const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
-// const specficQuerry = "https://api.github.com/repos/calvin-sg/";
+// const specficQuerry = "https://api.github.com/repos/calvindotsg/";
 
 const Project = ({heading, username, length, specific}) => {
     const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;

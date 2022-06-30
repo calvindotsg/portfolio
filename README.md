@@ -13,12 +13,12 @@
 </p>
 <!-- PROJECT LOGO -->
 
-[![GitHub stars](https://img.shields.io/github/stars/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/network)
-[![GitHub issues](https://img.shields.io/github/issues/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/issues)
-[![GitHub license](https://img.shields.io/github/license/calvin-sg/portfolio)](https://github.com/calvin-sg/portfolio/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/calvindotsg/portfolio)](./portfolio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/calvindotsg/portfolio)](./portfolio/network)
+[![GitHub issues](https://img.shields.io/github/issues/calvindotsg/portfolio)](./portfolio/issues)
+[![GitHub license](https://img.shields.io/github/license/calvindotsg/portfolio)](./portfolio/blob/master/LICENSE)
 
-[![Site preview](/ReadmeDocs/demo-increment2-2.gif)](https://github.com/calvin-sg/portfolio#increment-2-2-)
+[![Site preview](/ReadmeDocs/demo-increment2-2.gif)](./portfolio#increment-2-2-)
 
 ## Table of Contents
 
@@ -47,8 +47,6 @@
 A personal static website application hosted with Firebase, built with React to showcase my portfolio and recent projects.
 
 ## Development documentation 📚
-
-Additional documentation can be found in [ReadmeDocs](https://github.com/calvin-sg/portfolio/tree/master/ReadmeDocs).
 
 ### Increment 1 🎂
 
@@ -84,6 +82,8 @@ Added 'Final year project' section and implemented profile photo with responsive
    1. Video do not preload to improve web page loading time.
    2. Added wrapper using SCSS to prevent content jumping during transition between image of video poster and actual video.
 2. Changed 'Resume' icon to a more intuitive design indicating PDF format, based on usability studies.
+
+Additional documentation can be found in [ReadmeDocs](./portfolio/tree/master/ReadmeDocs).
 
 ## Technology Stack 🛠️
 
@@ -128,7 +128,7 @@ Dependencies defined in package.json:
 ## Sharing 💗
 
 Project is open source. Feel free to make your own version. All you need to do is to fork this repository,
-edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
+edit [/src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
 
 ## Future increments 🚀
 
@@ -146,19 +146,19 @@ own a GitHub account.
 2. Clone the forked repo from your account using:
 
    ```bash
-     git clone https://github.com/<your-username>/home.git
+     git clone https://github.com/<your-username>/portfolio.git
    ```
 
-3. Open in editor and edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
+3. Open in editor and edit [/src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
 
-4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
+4. Add your resume as <resume.pdf> in place of [/src/assets/resume.pdf](./src/assets/)
 
-5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13)
+5. Edit [title](./public/index.html#L20) and meta [description](./public/index.html#L14)
    in [public/index.html](./public/index.html).
 6. Change URL in [package.json](./package.json) file:
 
    ```json
-    "homepage": "https://<your-username>.github.io/home"
+    "homepage": "https://<your-username>.github.io/portfolio"
    ```
 
    Or for deployment at custom domain,
@@ -179,26 +179,26 @@ own a GitHub account.
    ```
 
    Or for deployment at \<username>.github.io,
-   refer [READMEdocs/custom-deployment.md](ReadmeDocs/custom-deployment.md) and [pages.js](./pages.js)
+   refer [READMEdocs/custom-deployment.md](./ReadmeDocs/custom-deployment.md).
 
 9. Congrats your site is up and running. To see it live, visit:
 
    ```https
-     https://<your-username>.github.io/home
+     https://<your-username>.github.io/portfolio
    ```
 
 10. To change the thumbnail image:
 
     - Navigate to the "public" folder.
-    - There you will see "social-image.png".
+    - There you will see "favicon.ico".
     - Delete it.
-    - Take a screenshot of your version and rename it "social-image.png" and place it there.
+    - Take a screenshot of your version and rename it "favicon.ico" and place it there.
 
 Next time if you make changes, repeat from step 8.
 
 ## Terms and License
 
-- `LGPL-3.0` license. 2022. Calvin. See [LICENSE](https://github.com/calvin-sg/portfolio/blob/master/LICENSE) for more information.
+- `LGPL-3.0` license. 2022. Calvin. See [LICENSE](./LICENSE) for more information.
 
 ## Usage
 
