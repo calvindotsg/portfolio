@@ -81,7 +81,7 @@ const career = {
             Time: "Jun 2022 - Present",
             Descriptions: [
                 "• Develop web application with proprietary Angular-Java Framework based on user stories and specifications, " +
-                "included CRUD operations and JHipster scaffolding generation.",
+                "including CRUD operations and JHipster scaffolding generation.",
                 "• Put into practice agile scrum methodology in a hybrid team environment, " +
                 "using Kanban boards and GitLab.",
                 "• Under the mentorship of career managers to develop software engineering best practices.",
