@@ -75,6 +75,23 @@ const career = {
     heading: "Career",
     lists: [
         {
+            CompanyName: "NCS Group",
+            Address: "NCS Hub, Singapore",
+            Title: "Software engineer",
+            Time: "Jun 2022 - Present",
+            Descriptions: [
+                "• Develop web application with proprietary Angular-Java Framework based on user stories and specifications, " +
+                "included CRUD operations and JHipster scaffolding generation.",
+                "• Put into practice agile scrum methodology in a hybrid team environment, " +
+                "using Kanban boards and GitLab.",
+                "• Under the mentorship of career managers to develop software engineering best practices.",
+                "• Utilised the latest tech stack and DevOps tools to assist development " +
+                "within the context of bootcamp assignment."
+            ],
+            TechStack: ["Agile scrum software development, Angular, Object-oriented Java, Apache Maven, " +
+            "REST services, Sprint Boot, JHipster, NodeJS, HTML5, MySQL, MS SQL, Git, GitLab"],
+        },
+        {
             CompanyName: "Sopra Steria Asia Pte. Ltd.",
             Address: "one-north business park, Singapore",
             Title: "Temporary Java Software engineer",
@@ -144,8 +161,8 @@ const repos = {
     show: true,
     heading: "Recent Projects",
     gitHubUsername: "calvindotsg", //i.e."johnDoe12Gh"
-    reposLength: 4,
-    specificRepos: [],
+    reposLength: 3,
+    specificRepos: ["portfolio"],
 };
 
 // GET IN TOUCH SECTION
