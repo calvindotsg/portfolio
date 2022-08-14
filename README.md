@@ -1,15 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">My Portfolio app ✨</h1>
-
-  <p align="center">
-    <a href="https://calvin.sg">calvin.sg</a>
-    modified from
-    <a href="https://hashirshoaeb.github.io/home">https://hashirshoaeb.github.io/home</a>
-    and
-    <a href="https://xunxdd.github.io/portfolio">https://xunxdd.github.io/portfolio</a>
-  </p>
+  <h1 align="center">A portfolio webapp</h1>
 </p>
 <!-- PROJECT LOGO -->
 
@@ -50,7 +42,7 @@ A personal static website application hosted with Firebase, built with React to 
 
 ### Increment 1 🎂
 
-Modified forked project to own information as portfolio website.
+First increment in enhancing forked project as my portfolio website.
 1. Added 'Contact me' page with center-align contact form, react component: semantic-ui-react for form elements and EmailJS sends contents of form via email
 2. Included 'Career' and 'Education' sections from [Xun Ding](https://github.com/xunxdd) forked project
 3. Modified hero media to include background 4-seconds loop video, react component: [React-player](https://www.npmjs.com/package/react-player)
@@ -59,7 +51,7 @@ Modified forked project to own information as portfolio website.
 
 ### Increment 2 🧋
 
-Added 'Final year project' section and implemented profile photo with responsive functionality
+Added 'Final year project' section and implemented profile photo with responsive functionality.
 1. Added Final year project section with video demo, react component: [React-player](https://www.npmjs.com/package/react-player)
 2. Modified profile photo with responsive functionality
 3. Multimedia elements have shadow and is interactive when mouse hover
@@ -129,6 +121,9 @@ Dependencies defined in package.json:
 
 Project is open source. Feel free to make your own version. All you need to do is to fork this repository,
 edit [/src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
+
+This portfolio webapp [calvin.sg](https://calvin.sg) is a fork of the works of [Hashir Shoaib](https://hashirshoaeb.github.io/home)
+and [Xun Ding](https://xunxdd.github.io/portfolio).
 
 ## Future increments 🚀
 

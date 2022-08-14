@@ -12,7 +12,7 @@ const EducationCard = ({value}) => {
         <Col md="12">
             < div className="p-2">
                 <h5>{university} </h5>
-                <div className="primary-text">{degree} - <span className="secondary-text">{time}</span></div>
+                <div className="primary-text">{degree} — <span className="secondary-text">{time}</span></div>
                 <hr/>
             </div>
         </Col>
