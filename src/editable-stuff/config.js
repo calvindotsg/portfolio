@@ -80,16 +80,14 @@ const career = {
             Title: "Software engineer",
             Time: "Jun 2022 - Present",
             Descriptions: [
-                "• Develop web application with proprietary Angular-Java Framework based on user stories and specifications, " +
-                "including CRUD operations and JHipster scaffolding generation.",
+                "• Develop full-stack web application with proprietary Angular-Spring Boot Java Framework " +
+                "based on user stories and specifications.",
                 "• Put into practice agile scrum methodology in a hybrid team environment, " +
-                "using Kanban boards and GitLab.",
-                "• Under the mentorship of career managers to develop software engineering best practices.",
-                "• Utilised the latest tech stack and DevOps tools to assist development " +
-                "within the context of bootcamp assignment."
+                "using Kanban boards, GitLab and latest DevOps tools.",
+                "• Under the mentorship of senior colleagues in developing software engineering best practices."
             ],
-            TechStack: ["Agile scrum software development, Angular, Object-oriented Java, Apache Maven, " +
-            "REST services, Sprint Boot, JHipster, NodeJS, HTML5, MySQL, MS SQL, Git, GitLab"],
+            TechStack: ["Agile scrum software development, Angular, Sprint Boot, Object-oriented Java, Apache Maven, " +
+            "REST services, HTML5, MySQL, MS SQL, Jira, AWS, Jenkins, GitLab, Git"],
         },
         {
             CompanyName: "Sopra Steria Asia Pte. Ltd.",
@@ -105,8 +103,8 @@ const career = {
                 "• Utilised the latest tech stack and DevOps tools to assist development " +
                 "within the context of a government contracted IT project."
             ],
-            TechStack: ["Object-oriented Java, DevOps, IBM Operational Decision Manager, Business Action Language, mySQL, Jira, " +
-            "GitLab, MobaXterm, Eclipse"],
+            TechStack: ["Object-oriented Java, IBM Operational Decision Manager, Business Action Language, mySQL, Jira, " +
+            "GitLab"],
         }
     ]
 };
@@ -116,7 +114,7 @@ const education = {
     lists: [
         {
             university: "University of London, SIM Global Education",
-            degree: "Bachelor of Science Computing and Information Systems",
+            degree: "Bachelor of Science (Honours) Computing and Information Systems (Second Upper Division)",
             time: "Sep 2019 - May 2022",
             description: ""
         },
@@ -161,8 +159,8 @@ const repos = {
     show: true,
     heading: "Recent Projects",
     gitHubUsername: "calvindotsg", //i.e."johnDoe12Gh"
-    reposLength: 3,
-    specificRepos: ["portfolio"],
+    reposLength: 4,
+    specificRepos: [],
 };
 
 // GET IN TOUCH SECTION
