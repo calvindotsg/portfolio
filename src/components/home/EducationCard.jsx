@@ -10,7 +10,7 @@ const EducationCard = ({value}) => {
 
     return (
         <Col md="12">
-            < div className="p-2">
+            <div className="p-2">
                 <h5>{university} </h5>
                 <div className="primary-text">{degree} — <span className="secondary-text">{time}</span></div>
                 <hr/>

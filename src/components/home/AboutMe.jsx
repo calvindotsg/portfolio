@@ -33,10 +33,10 @@ const AboutMe = ({
                             )}
                         </div>
                         <div className="col-sm-6">
-                            <h2 className="display-4 mb-5">{heading}</h2>
-                            {items}
+                            <h2 className="display-4 mb-5 text-left">{heading}</h2>
+                            <p className="lead text-left">{items}</p>
                             {resume && (
-                                <p className="lead text-center">
+                                <p className="lead text-left">
                                     <a
                                         className="btn btn-outline-dark btn-lg"
                                         href={resume}

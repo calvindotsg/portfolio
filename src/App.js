@@ -10,7 +10,8 @@ import {
     career,
     onlineWritings,
     education,
-    finalYearProject
+    finalYearProject,
+    certification
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -23,6 +24,7 @@ import Education from "./components/home/Education";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Publication from './components/home/Publication';
 import FormsContacts from "./components/contact/FormsContacts";
+import Certification from "./components/home/Certification";
 
 const Home = React.forwardRef((props, ref) => {
     return (
@@ -48,7 +50,6 @@ const Home = React.forwardRef((props, ref) => {
                     finalYearProjectList={finalYearProject.lists}
                 />
             )}
-
             {repos.show && (
                 <Project
                     heading={repos.heading}
@@ -57,14 +58,18 @@ const Home = React.forwardRef((props, ref) => {
                     specific={repos.specificRepos}
                 />
             )}
-
             {career.show && (
                 <Career
                     heading={career.heading}
                     careerList={career.lists}
                 />
             )}
-
+            {certification.show && (
+                <Certification
+                    heading={certification.heading}
+                    certificationList={certification.lists}
+                />
+            )}
             {education.show && (
                 <Education
                     heading={education.heading}

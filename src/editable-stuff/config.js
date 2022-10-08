@@ -55,10 +55,12 @@ const finalYearProject = {
             Descriptions: [
                 "• Problem statement: Identified as shortfalls in current methods among F&B management.",
                 "• Project scope: Customers motivations and location scouting for new outlets.",
+                "-",
                 "• Status quo: Deficiencies in techniques used to gather customer desired attributes, in these areas:",
                 "1. Optimal outlet location relies on mainly human intuition.",
                 "2. Limited information technology tools.",
-                "How it works:",
+                "-",
+                "• How it works:",
                 "1. The proposed web application seeks to gather customer’s motivations, distill into these distinct criteria as input into this application.",
                 "2. Thereafter, this project aims to use rule-based decision-making based on specific business rules and customer inputs.",
                 "3. The output of rule engine displayed on the web application:",
@@ -66,6 +68,25 @@ const finalYearProject = {
                 "• Feature tiles for each desired attribute your restaurant is recommended to provide."
             ],
             TechStack: ["React, mapbox-gl, json-rule-engine, json-forms, Semantic UI React, emailjs, sweetalert2, JetBrains WebStorm"],
+        }
+    ]
+};
+
+const certification = {
+    show: true,
+    heading: "Professional certifications",
+    lists: [
+        {
+            certificationTitle: "DevOps Engineering and Automation",
+            certificationAuthority: "NUS Institute of Systems Science",
+            issueDate: "Sep 2022",
+            credentialLink: "https://credentials.nus.edu.sg/34abec61-153f-435b-868a-54e4062f4da8"
+        },
+        {
+            certificationTitle: "Professional Scrum Master I",
+            certificationAuthority: "Scrum.org",
+            issueDate: "Jul 2022",
+            credentialLink: "https://www.credly.com/badges/b3dbd3bb-f266-44cc-ab38-2a93970c0fe6/public_url"
         }
     ]
 };
@@ -175,5 +196,6 @@ const getInTouch = {
 export {
     navBar, mainBody, about,
     getInTouch, career, education,
-    onlineWritings, repos, finalYearProject
+    onlineWritings, repos, finalYearProject,
+    certification
 };
