@@ -49,25 +49,25 @@ const FinalYearProjectCard = ({value}) => {
                     }</div>
                     <p className="lead text-center">
                         <a
-                            className="btn btn-outline-dark btn-lg"
+                            className="btn btn-outline-secondary mr-3"
                             href={ProjectLink}
                             target="_blank"
                             rel="noreferrer noopener"
                             role="button"
-                            aria-label="ProjectLink"
+                            aria-label="Project link"
                         >
-                            Project Link
+                            <i className="fas fa-external-link-alt"></i> Web app
                         </a>
                         {" "}
                         <a
-                            className="btn btn-outline-dark btn-lg"
+                            className="btn btn-outline-secondary mr-3"
                             href={GithubLink}
                             target="_blank"
                             rel="noreferrer noopener"
                             role="button"
-                            aria-label="GithubLink"
+                            aria-label="Github link"
                         >
-                            Github Link
+                            <i className="fab fa-github"/> Repo
                         </a>
                     </p>
                     {TechStack.length ? (

@@ -21,6 +21,7 @@ const Publication = ({heading, list, quote}) => {
                                     <div className="px-2 py-2 text-muted">
                                         {pub.description}
                                     </div>
+                                    <hr/>
                                 </div>
                             ))
                         }
