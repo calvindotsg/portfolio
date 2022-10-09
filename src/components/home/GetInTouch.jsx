@@ -21,7 +21,18 @@ const GetInTouch = ({
                                 role="button"
                                 aria-label="Contact form button"
                             >
-                                Contact form
+                                <i className="fas fa-envelope"/>{" "}Contact form
+                            </a>
+                            {" "}
+                            <a
+                                className="btn btn-outline-dark btn-lg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.t.me/calvindotsg"
+                                role="button"
+                                aria-label="Telegram contact"
+                            >
+                                <i className="fab fab fa-telegram"/> Message me
                             </a>
                         </p>
                         <p className="lead text-center pb-3">

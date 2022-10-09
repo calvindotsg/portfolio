@@ -33,10 +33,10 @@ const AboutMe = ({
                             )}
                         </div>
                         <div className="col-sm-6">
-                            <h2 className="display-4 mb-5 text-left">{heading}</h2>
-                            <p className="lead text-left">{items}</p>
+                            <h2 className="display-4 mb-5 text-center">{heading}</h2>
+                            <p className="lead text-center">{items}</p>
                             {resume && (
-                                <p className="lead text-left">
+                                <p className="lead text-center">
                                     <a
                                         className="btn btn-outline-dark btn-lg"
                                         href={resume}
@@ -45,7 +45,7 @@ const AboutMe = ({
                                         role="button"
                                         aria-label="Resume/CV"
                                     >
-                                        Resume
+                                        <i className="fas fa-file-pdf"/>{" "}Resume
                                     </a>
                                 </p>
                             )}
