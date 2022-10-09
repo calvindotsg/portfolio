@@ -5,7 +5,6 @@ import Box from '@material-ui/core/Box';
 import Typist from "react-typist";
 import Container from "react-bootstrap/Container";
 
-import heroVideo from "../../assets/hero.mp4";
 import SlideUpWhenVisible from "../../hooks/SlideUpWhenVisible";
 
 const useStyles = makeStyles(theme => ({
@@ -31,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const MainBody = React.forwardRef(
-    ({title, message, icons}, ref) => {
+    ({title, message, icons, heroVideo}, ref) => {
 
         const classes = useStyles();
 

@@ -9,7 +9,7 @@ const mainBody = {
     middleName: "",
     lastName: "Calvin",
     message: " Software Engineer. Enthusiastic learner. Road cyclist. ",
-
+    heroVideoLink: require("../assets/hero.mp4"),
     icons: [
         {
             image: "fab fa-linkedin",
