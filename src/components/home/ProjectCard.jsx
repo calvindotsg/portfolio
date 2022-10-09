@@ -41,13 +41,13 @@ const CardButtons = ({svn_url}) => {
     return (
         <>
             <a href={svn_url} target=" _blank" className="btn btn-outline-secondary  mr-3">
-                <i className="fab fa-github"/> Repo
+                <i className="fab fa-github"/>{" "}Repo
             </a>
             <a
                 href={`${svn_url}/archive/master.zip`}
                 className="btn btn-outline-secondary"
             >
-                <i className="fab fa-github"/> Clone
+                <i className="fab fa-github"/>{" "}Clone
             </a>
         </>
     );

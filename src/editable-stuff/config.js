@@ -12,12 +12,16 @@ const mainBody = {
 
     icons: [
         {
+            image: "fab fa-linkedin",
+            url: "https://www.linkedin.com/in/calvin-loh",
+        },
+        {
             image: "fab fa-github",
             url: "https://github.com/calvindotsg",
         },
         {
-            image: "fab fa-linkedin",
-            url: "https://www.linkedin.com/in/calvin-loh",
+            image: "fab fa-telegram",
+            url: "https://www.t.me/calvindotsg",
         },
         {
             image: "fas fa-envelope",

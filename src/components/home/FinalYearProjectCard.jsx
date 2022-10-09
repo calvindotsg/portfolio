@@ -56,7 +56,7 @@ const FinalYearProjectCard = ({value}) => {
                             role="button"
                             aria-label="Project link"
                         >
-                            <i className="fas fa-external-link-alt"></i> Web app
+                            <i className="fas fa-external-link-alt"></i>{" "}Web app
                         </a>
                         {" "}
                         <a
@@ -67,7 +67,7 @@ const FinalYearProjectCard = ({value}) => {
                             role="button"
                             aria-label="Github link"
                         >
-                            <i className="fab fa-github"/> Repo
+                            <i className="fab fa-github"/>{" "}Repo
                         </a>
                     </p>
                     {TechStack.length ? (

@@ -25,7 +25,7 @@ const CertificationCard = ({value}) => {
                         role="button"
                         aria-label="Credential link"
                     >
-                        <i className="fas fa-external-link-alt"></i> Credential link
+                        <i className="fas fa-external-link-alt"></i>{" "}See credential
                     </a>
                 </p>
                 <hr/>
