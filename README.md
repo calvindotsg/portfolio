@@ -1,5 +1,4 @@
 <!-- PROJECT LOGO -->
-<br />
 <p align="center">
   <h1 align="center">A portfolio webapp</h1>
 </p>
@@ -7,7 +6,6 @@
 
 [![GitHub stars](https://img.shields.io/github/stars/calvindotsg/portfolio)](./portfolio/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/calvindotsg/portfolio)](./portfolio/network)
-[![GitHub issues](https://img.shields.io/github/issues/calvindotsg/portfolio)](./portfolio/issues)
 [![GitHub license](https://img.shields.io/github/license/calvindotsg/portfolio)](./portfolio/blob/master/LICENSE)
 
 [![Site preview](/ReadmeDocs/demo-increment2-2.gif)](./portfolio#increment-2-2-)

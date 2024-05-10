@@ -45,6 +45,12 @@ const Home = React.forwardRef((props, ref) => {
                     resume={about.resume}
                 />
             )}
+            {career.show && (
+                <Career
+                    heading={career.heading}
+                    careerList={career.lists}
+                />
+            )}
             {finalYearProject.show && (
                 <FinalYearProject
                     heading={finalYearProject.heading}
@@ -57,12 +63,6 @@ const Home = React.forwardRef((props, ref) => {
                     username={repos.gitHubUsername}
                     length={repos.reposLength}
                     specific={repos.specificRepos}
-                />
-            )}
-            {career.show && (
-                <Career
-                    heading={career.heading}
-                    careerList={career.lists}
                 />
             )}
             {certification.show && (

@@ -100,10 +100,21 @@ const career = {
     heading: "Career",
     lists: [
         {
+            CompanyName: "heymax.ai",
+            Address: "LaunchPad @ one-north, Singapore",
+            Title: "Software engineer",
+            Time: "Aug 2023 - Present",
+            Descriptions: [
+                "• Being the ear on the ground, First point of contact for users. Excited to hear why you love heymax along with your painpoints, to feedback to the team as actionable business requirements",
+                "• Maximising value, minimising effort: Identify bottlenecks in business processes and opportunities for automation"
+            ],
+            TechStack: ["Next.js, Python Flask, Google Cloud"],
+        },
+        {
             CompanyName: "NCS Group",
             Address: "NCS Hub, Singapore",
             Title: "Software engineer",
-            Time: "Jun 2022 - Present",
+            Time: "Jun 2022 - Aug 2023",
             Descriptions: [
                 "• Develop full-stack web application with proprietary Angular-Spring Boot Java Framework " +
                 "based on user stories and specifications.",
